@@ -1,0 +1,58 @@
+entero CODE, NMC, CODM, NC, NCC, PC, NT, SUMA1, SUMA2, I
+cadena [30] NOME, NOMM
+real NOTA, PCP
+
+INICIO
+ NT <- 0
+ SUMA2 <- 0
+ ESCRIBA "Codigo del estudiante: "
+ LEA CODE
+ Mientras CODE >= 0 Haga
+  ESCRIBA "Digite nombre del estudiante: "
+  LEA NOME
+  ESCRIBA "Digite numero de materias cursadas: "
+  LEA NMC
+  NCC <- 0
+  SUMA1 <- 0
+  Para I <- 1 Hasta NMC Haga
+   ESCRIBA "Digite nombre de la materia: "
+   LEA NOMM
+   ESCRIBA "Codigo de la materia: "
+   LEA CODM
+   ESCRIBA "Digite numero de creditos de la materia: "
+   LEA NC
+   LLAMAR NUEVA_LINEA
+   ESCRIBA "Digite la nota obtenida en la materia: "
+   LEA NOTA
+   LLAMAR NUEVA_LINEA
+   NCC <- NCC + NC
+   SUMA1 <- SUMA1 + NC * NOTA
+   LLAMAR NUEVA_LINEA
+   ESCRIBA "*******REPORTE GENERAL*******: "
+   LLAMAR NUEVA_LINEA
+   
+   ESCRIBA "Codigo de la materia: ", CODM
+   LLAMAR NUEVA_LINEA
+   ESCRIBA "Nombre de la materia: ", NOMM
+   LLAMAR NUEVA_LINEA
+   ESCRIBA "La nota es: ", NOTA
+   LLAMAR NUEVA_LINEA
+   ESCRIBA "**************************"
+   LLAMAR NUEVA_LINEA
+  Fin Para
+  PC <- SUMA1/NCC
+  NT <- NT + 1
+  SUMA2 <- SUMA2 + PC
+  ESCRIBA "Creditos cursados: ", NCC
+  LLAMAR NUEVA_LINEA
+  ESCRIBA "Promedio de creditos: ", PC
+  LLAMAR NUEVA_LINEA
+  ESCRIBA "Nuevo codigo: "
+  LEA CODE
+ Fin Mientras
+ PCP <- SUMA2/NT
+ ESCRIBA "Promedio de credito ponderado: ", PCP
+FIN
+  
+   
+   

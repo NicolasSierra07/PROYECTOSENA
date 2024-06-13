@@ -1,0 +1,52 @@
+entero PESOA, PESOB, PESOC, PESOD
+INICIO
+ escriba "Peso A: "
+ lea PESOA
+ escriba "Peso A: ", PESOA
+ llamar nueva_linea
+ escriba "Peso B: "
+ lea PESOB
+ escriba "Peso B: ", PESOB
+ llamar nueva_linea
+ escriba "Peso C: "
+ lea PESOC
+ escriba "Peso C: ", PESOC
+ llamar nueva_linea
+ escriba "Peso D: "
+ lea PESOD
+ escriba "Peso D: ", PESOD
+ 
+ si (PESOA = PESOB) Y (PESOA = PESOC) entonces
+  si PESOD > PESOA entonces
+  llamar nueva_linea
+   escriba "LA ESFERA D ES LA DIFERENTE Y ES DE MAYOR PESO"
+  sino
+   escriba "LA ESFERA D ES LA DIFERENTE Y ES DE MENOR PESO"
+  fin si
+ sino
+  si (PESOA = PESOB) Y (PESOA = PESOD) entonces
+   escriba "LA ESFERA C ES LA DIFERENTE"
+   SI PESOC > PESOA entonces
+    ESCRIBA " Y ES DE MAYOR PESO"
+   sino
+    escriba " Y ES DE MENOR PESO"
+   fin si
+  sino
+   si (PESOA = PESOC) Y (PESOA = PESOD) entonces
+    escriba "LA ESFERA B ES LA DIFERENTE"
+    SI PESOB > PESOD entonces
+     escriba " Y ES DE MAYOR PESO"
+    sino
+     escriba "Y ES DE MENOR PESO"
+    fin si
+   sino
+    escriba "LA ESFERA A ES LA DIFERENTE"
+    si PESOA > PESOB entonces
+     escriba "Y ES DE MAYOR PESO"
+    sino 
+     escriba "Y ES DE MENOR PESO"
+    fin si
+   fin si
+  fin si
+ fin si
+FIN

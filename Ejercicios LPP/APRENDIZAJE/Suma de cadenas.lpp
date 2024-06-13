@@ -1,0 +1,9 @@
+Cadena [25] nombre, apellido, completo
+Inicio
+ Escriba "Su Nombre"
+ Lea nombre
+ Escriba "Apellido"
+ Lea apellido
+ Completo <- nombre + " " + apellido
+ Escriba "Nombre completo", completo
+Fin

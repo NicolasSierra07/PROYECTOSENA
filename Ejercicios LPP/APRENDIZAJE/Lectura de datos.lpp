@@ -1,0 +1,7 @@
+Cadena [25] nombre
+Inicio
+ Escriba "Ingrese su nombre"
+ Lea nombre
+ Escriba "Bienvenido"
+ Escriba nombre
+Fin

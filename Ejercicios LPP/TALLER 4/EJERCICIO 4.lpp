@@ -1,0 +1,34 @@
+real VALCOMP, VALPAG, PDES
+cadena [25] color
+INICIO
+escriba "Valor de la compra: "
+lea VALCOMP
+escriba "El valor de la compra es de: ", VALCOMP
+llamar nueva_linea
+escriba "Escriba el color de la bolita: "
+lea COLOR
+escriba "El color de la bolita es: ", COLOR
+llamar nueva_linea
+
+Si color = "BLANCO" entonces
+   PDES <- 1
+   SINO
+       SI COLOR = "VERDE" ENTONCES
+          PDES <- 0.90
+          SINO
+              SI COLOR = "AMARILLO" ENTONCES
+                 PDES <- 0.75
+                 SINO
+                     SI COLOR = "AZUL" ENTONCES
+                        PDES <- 0.50
+                        SINO
+                            PDES<- 0
+                       FIN SI
+                  FIN SI
+              FIN SI
+          FIN SI
+     VALPAG <- (VALCOMP * PDES)
+     escriba "El valor de la compra con descuento es: ", VALPAG
+FIN
+
+                           

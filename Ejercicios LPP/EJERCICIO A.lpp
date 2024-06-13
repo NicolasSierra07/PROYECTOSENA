@@ -1,0 +1,45 @@
+entero COD, CODS, CODSA, SAL, TOTSUC
+cadena [30] NOM
+INICIO
+ ESCRIBA "Codigo del empleado: "
+ LEA COD
+ ESCRIBA "Codigo de la sucursal: "
+ LEA CODS
+ ESCRIBA "Nombre del Empleado: "
+ LEA NOM
+ ESCRIBA "Digite el salario del empleado: "
+ LEA SAL
+ LLAMAR NUEVA_LINEA
+ Mientras COD <> 0 Haga
+  llamar nueva_linea
+  ESCRIBA "REPORTE POR SUCURSAL: "
+   LLAMAR NUEVA_LINEA
+  ESCRIBA "CODIGO DE LA SUCURSAL: ", CODS
+   LLAMAR NUEVA_LINEA
+   
+   CODSA <- CODS
+   TOTSUC <- 0
+    Mientras (CODS = CODSA)Y(COD <> 0) Haga
+     ESCRIBA "Codigo del Empleado: ", COD
+     LLAMAR NUEVA_LINEA
+      ESCRIBA "Nombre del Empleado: ", NOM
+      LLAMAR NUEVA_LINEA
+      ESCRIBA "Salario: ", SAL
+      LLAMAR NUEVA_LINEA
+      TOTSUC <- TOTSUC+SAL
+      ESCRIBA "Total de salarios por cada sucursal: ", TOTSUC
+      LLAMAR NUEVA_LINEA
+      ESCRIBA "Codigo del nuevo empleado: "
+      LEA COD
+       Si COD <> 0 Entonces
+        ESCRIBA "Codigo se la sucursal: "
+        LEA CODS
+        ESCRIBA "Nombre del empleado: "
+        LEA NOM
+        ESCRIBA "Salario del empleado: "
+        LEA SAL
+       Fin Si
+      Fin Mientras
+      ESCRIBA "TOTAL SALARIOS DE LA SUCURSAL: ", TOTSUC
+     Fin Mientras
+Fin

@@ -1,0 +1,23 @@
+Entero horas
+Real Pbruto, ihss, tp
+Cadena [25] nombre
+Inicio
+ Escriba "Ingresar el nombre"
+ Lea nombre
+ Escriba "Ingresar las horas trabajadas"
+ Lea horas
+ Pbruto <- horas*50
+ Si pbruto > 2400 entonces
+  Ihss <- 84
+ Sino
+  Ihss <- 0.035*pbruto
+ Fin si
+ Tp<-pbruto-ihss
+ Escriba "Pago bruto", pbruto
+ Llamar Nueva_linea
+ Escriba "Seguro Social", ihss
+ Llamar Nueva_linea
+ Escriba "Total a pagar", tp
+ Llamar Nueva_linea
+Fin
+ 

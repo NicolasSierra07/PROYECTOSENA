@@ -1,0 +1,8 @@
+Entero num
+Inicio
+ Escriba "Ingresar un numero"
+ Lea num
+ Si num > 100 entonces
+ 
+ Fin Si
+Fin
